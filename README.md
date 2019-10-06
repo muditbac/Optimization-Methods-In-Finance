@@ -36,19 +36,22 @@ In probabilistic portfolio models, the basic assumption is that the future of ri
 can be correctly reflected by its historical data. This model goes against that to present a possibilitic model based on fuzzy theory. 
 
 - Real Life Constraints
- - Investors Aspiration Level and Decision Control Variables [ Multi Objective to Single Objective Fuzzy Formulation]
- - Fuzzy Rate of Returns and Risk Measure
- - Multiple time period investment
- - Diversification in investment [ Entropy and Cardianlity Constraint ]
- - Minimum Transaction Lots 
-
+  - Investors Aspiration Level and Decision Control Variables [ Multi Objective to Single Objective Fuzzy Formulation]
+  - Fuzzy Rate of Returns and Risk Measure
+  - Multiple time period investment
+  - Diversification in investment [ Entropy and Cardianlity Constraint ]
+  - Minimum Transaction Lots 
 - Formulation 
- - Bi-objective Model (Max. Terminal Wealth and Min. Risk)
- - Investment Return – Possibilistic Mean value of the return rate
- - Investment Risk – Lower Possibilistic Semivariance of the return rate
- - Diversification Degree – Proportion Entropy and Max-K Stock
- - Investors Satisfaction Degree – S shaped Membership Function (for each objective)
+  - Bi-objective Model (Max. Terminal Wealth and Min. Risk)
+  - Investment Return – Possibilistic Mean value of the return rate
+  - Investment Risk – Lower Possibilistic Semivariance of the return rate
+  - Diversification Degree – Proportion Entropy and Max-K Stock
+  - Investors Satisfaction Degree – S shaped Membership Function (for each objective)
 
-We used **Genetic Algorithm** to solve the optimization problem. We generated optimum frontier for **multi-objective mixed-integer optimization problem** using **NSGA-II**. We also used vanilla genetic algorithm to solve derived single objective  folmulations.
+We used **genetic algorithms** to solve the resulted **multi-objective mixed-integer non-linear optimization problem**. We generated optimum frontier using **NSGA-II** and used vanilla genetic algorithm to solve derived single objective folmulations.
 
 ![Fuzzy Optimum Frontier](images/im3.png)
+
+## References 
+[1] A multi-period fuzzy portfolio optimization model with minimum transaction lots, Yong-Jun Liu, Wei-Guo Zhang
+
