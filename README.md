@@ -19,11 +19,36 @@ We extracted data from `pandas_datareader` for following stocks:
 
 ## MeanVarianceModel.ipynb	
 - This notebook calculates rate of returns of 10 indian stocks and presents classical **Markovitz Mean-Variance Model** on them. This also presents a variant of model with returns constraint. We have also plotted optimal frontier of the model by showing tradeoff between rate of returns and risk. 
-[[ TODO Image ]]
 - We depict **Two Fund Theorem** that 'Any two optimal porftolio generates the optimal frontiers'. We then use this theorem to generate the same optimal frontier.
 - We then show the **Capital Asset Pricing Model** and the **Market Capital Line** for the set of stocks.
+
+![Capital Asset Pricing Model](images/im2.png)
 
 ## PortfolioDiagram.ipynb
 - This shows effect of correlation between stock on the optimal frontier. The current model takes two stocks and shows the impact of the correlation parameter.
 
-## Fuzzy Portfolio Optimization
+![Portfolio Diagram](images/im1.png)
+
+
+## FuzzyPortfolioOptimization.ipynb
+
+In probabilistic portfolio models, the basic assumption is that the future of risky assets
+can be correctly reflected by its historical data. This model goes against that to present a possibilitic model based on fuzzy theory. 
+
+- Real Life Constraints
+ - Investors Aspiration Level and Decision Control Variables [ Multi Objective to Single Objective Fuzzy Formulation]
+ - Fuzzy Rate of Returns and Risk Measure
+ - Multiple time period investment
+ - Diversification in investment [ Entropy and Cardianlity Constraint ]
+ - Minimum Transaction Lots 
+
+- Formulation 
+ - Bi-objective Model (Max. Terminal Wealth and Min. Risk)
+ - Investment Return – Possibilistic Mean value of the return rate
+ - Investment Risk – Lower Possibilistic Semivariance of the return rate
+ - Diversification Degree – Proportion Entropy and Max-K Stock
+ - Investors Satisfaction Degree – S shaped Membership Function (for each objective)
+
+We used **Genetic Algorithm** to solve the optimization problem. We generated optimum frontier for **multi-objective mixed-integer optimization problem** using **NSGA-II**. We also used vanilla genetic algorithm to solve derived single objective  folmulations.
+
+![Fuzzy Optimum Frontier](images/im3.png)
