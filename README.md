@@ -1,8 +1,7 @@
 # Optimization Methods In Finance
-This repository contains the code and results of Optimization Methods in Finance course at IIT Kharagpur
 
 ## MeanVarianceModel.ipynb	
-- This notebook calculates rate of returns of 12 indian stocks and presents classical **Markovitz Mean-Variance Model** on them. This also presents a variant of model with returns constraint. We have also plotted optimal frontier of the model by showing tradeoff between rate of returns and risk. 
+- This notebook calculates rate of returns of 12 indian stocks and presents classical **Markovitz Mean-Variance Model** on them. We have also plotted optimal frontier of the model by showing tradeoff between rate of returns and risk. 
 - We depict **Two Fund Theorem** that 'Any two optimal porftolio generates the optimal frontiers'. We then use this theorem to generate the same optimal frontier.
 - We then show the **Capital Asset Pricing Model** and the **Market Capital Line** for the set of stocks.
 
@@ -16,11 +15,10 @@ This repository contains the code and results of Optimization Methods in Finance
 
 ## FuzzyPortfolioOptimization.ipynb
 
-In probabilistic portfolio models, the basic assumption is that the future of risky assets
-can be correctly reflected by its historical data. This model goes against that to present a possibilitic model based on fuzzy theory. 
+In probabilistic portfolio models, the basic assumption is that the future of risky assets can be correctly reflected by its historical data. This is generally not true, thus this model goes against that to present a possibilitic portfolio model based on fuzzy theory. 
 
 - Real Life Constraints
-  - Investors Aspiration Level and Decision Control Variables [ Multi Objective to Single Objective Fuzzy Formulation]
+  - Investors Aspiration Level and Decision Control Variables [ Multi Objective to Single Objective Fuzzy Formulation ]
   - Fuzzy Rate of Returns and Risk Measure
   - Multiple time period investment
   - Diversification in investment [ Entropy and Cardianlity Constraint ]
@@ -32,7 +30,7 @@ can be correctly reflected by its historical data. This model goes against that 
   - Diversification Degree – Proportion Entropy and Max-K Stock
   - Investors Satisfaction Degree – S shaped Membership Function (for each objective)
 
-We used **genetic algorithms** to solve the resulted **multi-objective mixed-integer non-linear optimization problem**. We generated optimum frontier using **NSGA-II** and used vanilla genetic algorithm to solve derived single objective folmulations.
+We used **genetic algorithms** to solve the resulted **multi-objective non-linear integer programming problem**. We generated optimum frontier using **NSGA-II** and used vanilla genetic algorithm to solve derived single objective folmulations.
 
 ![Fuzzy Optimum Frontier](images/im3.png)
 
